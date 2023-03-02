@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Enrique Moya" />
+    <meta
+      name="description"
+      content="This is a website made with educational purposes. THIS IS NOT THE OFFICIAL WEBSITE."
+    />
+    <meta name="color-scheme" content="light" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Replica Yelp Landing Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="hero.jpg"
+        alt="A mechanic checking a car"
+        width="2400"
+        height="1322"
+        loading="eager"
+        class="hero-img"
+      />
+      <nav class="navbar">
+        <div class="navbar__search">
+          <div class="navbar__logo">
+            <img src="logo.svg" alt="Yelp logo" />
+          </div>
+          <div class="navbar__searchbar">
+            <label for="main-searchbar"></label>
+            <input
+              type="search"
+              name=""
+              id="main-searchbar"
+              class="main-searchbar"
+              placeholder="tacos, cheap dinner, Max's"
+            />
+            <label for="location-searchbar"></label>
+            <input
+              type="search"
+              name=""
+              id="location-searchbar"
+              class="location-searchbar"
+              placeholder="Zona Centro, Tijuana, BC"
+            />
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </button>
+          </div>
+          <a href="" class="navbar__link">For Business</a>
+          <a href="" class="navbar__link">Write a Review</a>
+          <button class="navbar__button navbar__button--log-in">Log In</button>
+          <button class="navbar__button navbar__button--sign-up">
+            Sign Up
+          </button>
+          <i class="fa-solid fa-bars fa-2xl menu-icon"></i>
+        </div>
+        <ul class="navbar__menu-list">
+          <li class="menu-item">Restaurants</li>
+          <li class="menu-item">Home Services</li>
+          <li class="menu-item">Auto Services</li>
+          <li class="menu-item">More</li>
+        </ul>
+      </nav>
+      <div class="container">
+        <h1 class="header__title">Time for a tune-up?</h1>
+        <button class="header__button">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>&ThickSpace; Auto
+          Repeair
+        </button>
+      </div>
+      <div class="slides">
+        <div class="slide slide--current"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__reviews">
+        <h2 class="review-tittle">Recent Activity</h2>
+        <div class="grid-review">
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/marie-kondo.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Marie Kondo</h3>
+              <span class="customer__activity">Added 1 photo</span>
+            </div>
+            <a href="#" class="review__place">Sushi Yoshi</a>
+            <img
+              src="review/sushi-1x.jpg"
+              srcset="review/sushi-2x.jpg 2x, review/sushi-3x.jpg 3x"
+              alt="Japanese Sushi"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">38 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/customer.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Enrique Moya</h3>
+              <span class="customer__activity">Added 2 photos</span>
+            </div>
+            <a href="#" class="review__place">La Taqueria</a>
+            <img
+              src="review/tacos-1x.jpg"
+              srcset="review/tacos-2x.jpg 2x, review/tacos-3x.jpg 3x"
+              alt="Mexican tacos"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">485 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/emma-peters.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Emma Peters</h3>
+              <span class="customer__activity">Added 1 photo</span>
+            </div>
+            <a href="#" class="review__place">Bistro 18</a>
+            <img
+              src="review/steak-1x.jpg"
+              srcset="review/steak-2x.jpg 2x, review/steak-3x.jpg 3x"
+              alt="French steak"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">24 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/gandhi.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Mahatma Gandhi</h3>
+              <span class="customer__activity">Added 4 photos</span>
+            </div>
+            <a href="#" class="review__place">Curry House</a>
+            <img
+              src="review/curry-1x.jpg"
+              srcset="review/curry-2x.jpg 2x, review/curry-3x.jpg 3x"
+              alt="Indian curry"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">36 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/godfather.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">The Godfather</h3>
+              <span class="customer__activity">Added 3 photos</span>
+            </div>
+            <a href="#" class="review__place">Bella Italia</a>
+            <img
+              src="review/italian-1x.jpg"
+              srcset="review/italian-2x.jpg 2x, review/italian-3x.jpg 3x"
+              alt="Italian pasta"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">104 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/confucius.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Confucius</h3>
+              <span class="customer__activity">Added 1 photo</span>
+            </div>
+            <a href="#" class="review__place">Peking Duck House</a>
+            <img
+              src="review/ramen-1x.jpg"
+              srcset="review/ramen-2x.jpg 2x, review/ramen-3x.jpg 3x"
+              alt="Ramen noodles with shrimp"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">79 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/ryan-gosling.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Ryan Gosling</h3>
+              <span class="customer__activity">Added 2 photos</span>
+            </div>
+            <a href="#" class="review__place">Tim Hortons</a>
+            <img
+              src="review/pancake-1x.jpg"
+              srcset="review/pancake-2x.jpg 2x, review/pancake-3x.jpg 3x"
+              alt="Pancakes with syrup and banana slices"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">88 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/aristotle.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Aristotle</h3>
+              <span class="customer__activity">Added 10 photos</span>
+            </div>
+            <a href="#" class="review__place">The Greek Taverna</a>
+            <img
+              src="review/greek-salad-1x.jpg"
+              srcset="
+                review/greek-salad-2x.jpg 2x,
+                review/greek-salad-3x.jpg 3x
+              "
+              alt="Greek salad"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">92 Likes</div>
+          </section>
+          <section class="review-card">
+            <div class="review__customer">
+              <img
+                src="customers/ronaldinho.jpg"
+                alt="customer profile picture"
+                class="customer__image"
+                width="45"
+                height="45"
+              />
+              <h3 class="customer__name">Ronaldinho</h3>
+              <span class="customer__activity">Added 3 photos</span>
+            </div>
+            <a href="#" class="review__place">The Brazilian Steakhouse</a>
+            <img
+              src="review/brazilian-dish-1x.jpg"
+              srcset="
+                review/brazilian-dish-2x.jpg 2x,
+                review/brazilian-dish-3x.jpg 3x
+              "
+              alt="Brazilian dish made of salad, meat and boiled eggs"
+              class="review__image"
+              width="1170"
+              height="600"
+            />
+            <div class="review__reaction">71 Likes</div>
+          </section>
+        </div>
+      </section>
+      <div class="more-reviews">
+        <a href="#" class="more-reviews__text">
+          <i class="fa-solid fa-chevron-down fa-xs"
+            >&ThickSpace;&ThickSpace;&ThickSpace;</i
+          >Show more activity
+        </a>
+      </div>
+      <section class="categories">
+        <h2 class="categories__title">Categories</h2>
+        <div class="categories-grid">
+          <section class="categories__section">
+            <img
+              src="categories/restaurants.svg"
+              width="40"
+              height="40"
+              alt="Restaurant icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Restaurants</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/shopping.svg"
+              width="40"
+              height="40"
+              alt="Shopping icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Shopping</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/nightlife.svg"
+              width="40"
+              height="40"
+              alt="Nightlife icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Nightlife</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/active-life.svg"
+              width="40"
+              height="40"
+              alt="Active life icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Active Life</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/beauty-and-spa.svg"
+              width="40"
+              height="40"
+              alt="Beauty and spas icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Beauty &amp; Spas</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/car.svg"
+              width="40"
+              height="40"
+              alt="Car icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Automotive</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/home-services.svg"
+              width="40"
+              height="40"
+              alt="Home services icon"
+              class="categories__image"
+            />
+            <h3 class="categories__text">Home Services</h3>
+          </section>
+          <section class="categories__section">
+            <img
+              src="categories/more.svg"
+              width="40"
+              height="40"
+              alt="Icon with three dots"
+              class="categories__image"
+            />
+            <h3 class="categories__text">More</h3>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__index" aria-label="index">
+        <div class="index__column">
+          <span class="column__title">About</span>
+          <a href="#" class="column__link">About Yelp</a>
+          <a href="#" class="column__link">Careers</a>
+          <a href="#" class="column__link">Press</a>
+          <a href="#" class="column__link">Investor Relations</a>
+          <a href="#" class="column__link">Trust &amp; Safety</a>
+          <a href="#" class="column__link">Content Guidelines</a>
+          <a href="#" class="column__link">Accessibility Statement</a>
+          <a href="#" class="column__link">Terms of Service</a>
+          <a href="#" class="column__link">Privacy Policy</a>
+          <a href="#" class="column__link">Ad Choices</a>
+          <a href="#" class="column__link">Your Privacy Choices</a>
+        </div>
+        <div class="index__column">
+          <span class="column__title">Discover</span>
+          <a href="#" class="column__link">Yelp Project Cost Guides</a>
+          <a href="#" class="column__link">Collections</a>
+          <a href="#" class="column__link">Talk</a>
+          <a href="#" class="column__link">Events</a>
+          <a href="#" class="column__link">Yelp Blog</a>
+          <a href="#" class="column__link">Support</a>
+          <a href="#" class="column__link">Yelp Mobile</a>
+          <a href="#" class="column__link">Developers</a>
+          <a href="#" class="column__link">RSS</a>
+        </div>
+        <div class="index__column">
+          <span class="column__title">Yelp For Business</span>
+          <a href="#" class="column__link">Yelp For Business</a>
+          <a href="#" class="column__link">Business Owner Login</a>
+          <a href="#" class="column__link">Claim Your Business Page</a>
+          <a href="#" class="column__link">Advertise on Yelp</a>
+          <a href="#" class="column__link">Yelp for Restaurant Owners</a>
+          <a href="#" class="column__link">Table Management</a>
+          <a href="#" class="column__link">Business Success Stories</a>
+          <a href="#" class="column__link">Business Support</a>
+          <a href="#" class="column__link">Yelp Blog for Business</a>
+        </div>
+        <div class="index__column">
+          <span class="column__title">Languages</span>
+          <div>
+            <a href="#" class="column__link">English</a>
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </div>
+          <span class="column__title">Countries</span>
+          <div>
+            <a href="#" class="column__link">Mexico</a>
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
+          </div>
+        </div>
+      </nav>
+      <section class="copyright">
+        <span class="copyright__text">
+          Copyright © 2004-2023 Yelp Inc. Yelp, and related marks are registered
+          trademarks of Yelp.
+        </span>
+      </section>
+    </footer>
+  </body>
+</html>
