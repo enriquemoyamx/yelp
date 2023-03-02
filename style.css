@@ -7,7 +7,8 @@
   --color-alabaster: #f7f7f7;
   --color-nevada: #6e7072;
   --color-silver-sand: #c8c9ca;
-  font-family: "Open Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   --fontsize-xs: 0.75rem;
   --fontsize-s: 0.875rem;
   --fontsize-m: 1rem;
